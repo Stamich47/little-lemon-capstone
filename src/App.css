@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Markazi+Text:wght@400;700&display=swap");
+
+/* Grid Container */
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header nav"
+    "main main"
+    "footer footer";
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
+  width: 100%;
+  max-width: 1440px;
+  max-height: 2900px;
+  margin: 0 auto;
+  padding: 0 13.7%;
+  box-sizing: border-box;
+  font-size: 1.5vw;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header/Nav Styling */
+
+.header {
+  grid-area: header;
+  margin-top: 5vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header img {
+  width: 15vw;
+  max-width: 150px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
+  grid-area: nav;
+  margin-top: 5vh;
+}
+
+.nav ul {
   display: flex;
-  flex-direction: column;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+  text-wrap: nowrap;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex: 1 1 auto;
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  color: #333333;
 }
 
-.App-link {
-  color: #61dafb;
+.nav a {
+  text-decoration: none;
+  color: inherit;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Main Styling */
+
+.main {
+  grid-area: main;
+  margin-top: 2vh;
+}
+
+.main-hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 20%;
+
+  color: #edefee;
+  background-color: #495e57;
+  width: 140%;
+  margin-left: -20%;
+  margin-right: -20%;
+  position: relative;
+}
+
+.main-hero article {
+  max-width: 40%;
+}
+
+.main-hero h2 {
+  font-family: "Markazi Text", serif;
+  font-weight: 700;
+  font-size: 5vw;
+  color: #f4ce14;
+  text-wrap: nowrap;
+  margin-bottom: 0;
+}
+
+.main-hero h5 {
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  font-size: 3vw;
+  margin-bottom: 20px;
+}
+
+.main-hero p {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  font-size: 2vw;
+}
+
+.main-hero button {
+  background-color: #f4ce14;
+  color: #333333;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 12px;
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  font-size: 2vw;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px;
+}
+
+.main-hero img {
+  width: 30%;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  position: absolute;
+  right: 17%;
+  bottom: -15%;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+@media (min-width: 1100px) {
+  .container {
+    font-size: 1rem;
   }
 }

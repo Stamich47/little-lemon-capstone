@@ -1,7 +1,7 @@
 export default function Nav() {
   return (
-    <nav>
-      <ul className="d-flex gap-4 nav">
+    <nav className="nav">
+      <ul>
         <li>
           <a href="./Home">Home</a>
         </li>
