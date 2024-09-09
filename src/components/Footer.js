@@ -1,9 +1,8 @@
 export default function Footer() {
   return (
     <footer className="footer">
-      <img src="https://placehold.co/100.png"></img>
       <div>
-        <h5>Doormat Navigation</h5>
+        <h5>Site Map</h5>
         <ul>
           <li>Home</li>
           <li>About</li>
@@ -30,8 +29,6 @@ export default function Footer() {
           <li>Instagram</li>
         </ul>
       </div>
-
-      <p>© 2024 Little Lemon</p>
     </footer>
   );
 }

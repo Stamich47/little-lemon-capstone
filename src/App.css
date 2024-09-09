@@ -14,7 +14,7 @@
   max-width: 1440px;
   max-height: 2900px;
   margin: 0 auto;
-  padding: 0 13.7%;
+  padding: 0 10%;
   box-sizing: border-box;
   font-size: 1.5vw;
   overflow-x: hidden;
@@ -61,19 +61,20 @@ header img {
 .main {
   grid-area: main;
   margin-top: 2vh;
+  margin-bottom: 50px;
 }
 
 .main-hero {
   display: flex;
   justify-content: space-between;
   padding: 2rem 20%;
-
   color: #edefee;
   background-color: #495e57;
   width: 140%;
   margin-left: -20%;
   margin-right: -20%;
   position: relative;
+  margin-bottom: 15%;
 }
 
 .main-hero article {
@@ -112,7 +113,7 @@ header img {
   font-weight: 600;
   font-size: 2vw;
   cursor: pointer;
-  box-shadow: 1px 1px 5px;
+  box-shadow: 1px 1px 4px;
 }
 
 .main-hero img {
@@ -123,10 +124,105 @@ header img {
   position: absolute;
   right: 17%;
   bottom: -15%;
+  box-shadow: 1px 1px 5px black;
 }
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-specials {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 20px;
+  font-family: "Karla", sans-serif;
+}
+
+.specials-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specials-title h2 {
+  font-size: 4vw;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.specials-title button {
+  background-color: #f4ce14;
+  color: #333333;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 12px;
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  font-size: 2vw;
+  cursor: pointer;
+  box-shadow: 1px 1px 4px;
+}
+
+.specials-card {
+  font-family: "Karla", sans-serif;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 4px;
+  width: 30%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.specials-card img {
+  height: 20vw;
+  object-fit: cover;
+}
+
+.specials-card article {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 1rem;
+  background-color: #edefee;
+  flex-grow: 1;
+}
+
+.specials-card article h3,
+h4 {
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+
+.specials-card article h4 {
+  color: #ee9972;
+}
+.specials-card article p {
+  flex-grow: 1;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Footer Styling */
 
 .footer {
   grid-area: footer;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer ul {
+  list-style: none;
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  color: #333333;
+  text-align: start;
+  padding: 0;
 }
 
 @media (min-width: 1100px) {
