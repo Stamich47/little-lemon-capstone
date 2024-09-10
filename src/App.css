@@ -90,7 +90,8 @@ header img {
   margin-bottom: 0;
 }
 
-.main-hero h5 {
+.main-hero,
+.about-us h5 {
   font-family: "Karla", sans-serif;
   font-weight: 600;
   font-size: 3vw;
@@ -122,8 +123,8 @@ header img {
   border-radius: 16px;
   object-fit: cover;
   position: absolute;
-  right: 17%;
-  bottom: -15%;
+  right: 15%;
+  bottom: -10%;
   box-shadow: 1px 1px 5px black;
 }
 
@@ -144,6 +145,7 @@ header img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 8vh;
 }
 
 .specials-title h2 {
@@ -208,6 +210,111 @@ h4 {
   align-items: center;
 }
 
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #edefee;
+  width: 140%;
+  margin-left: -20%;
+  margin-right: -20%;
+  padding: 20px 20%;
+  padding-bottom: 50px;
+}
+
+.review-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.review-card {
+  font-family: "Karla", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 1px 1px 2px gray;
+  border-radius: 16px;
+  padding: 10px;
+  background-color: white;
+}
+
+.review-card > p {
+  text-align: center;
+}
+
+.review-card article {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.review-card h5 {
+  font-weight: 600;
+  font-size: 1.5vw;
+}
+
+.review-card img {
+  width: 10vw;
+  height: auto;
+  border-radius: 50%;
+}
+
+.review-text {
+  font-size: 1.5vw;
+  flex-grow: 1;
+}
+
+/* Main - About us */
+
+.about-us {
+  display: flex;
+  gap: 20px;
+  font-family: "Karla", sans-serif;
+  position: relative;
+  color: #edefee;
+  background-color: #495e57;
+  width: 140%;
+  margin-left: -20%;
+  margin-right: -20%;
+  position: relative;
+  margin-bottom: 15%;
+  padding: 20px 0;
+}
+
+.about-us article {
+  margin-left: 15%;
+  width: 30%;
+}
+
+.about-us img {
+  width: 25%;
+  height: auto;
+  border-radius: 16px;
+  position: absolute;
+}
+
+.about-us > .about-images :first-child {
+  right: 23%;
+  top: 35%;
+}
+
+.about-us > .about-images :last-child {
+  right: 15%;
+  top: 10%;
+}
+
+.about-us h2 {
+  font-family: "Markazi Text", serif;
+  font-weight: 700;
+  font-size: 5vw;
+  color: #f4ce14;
+  text-wrap: nowrap;
+  margin-bottom: 0;
+}
 /* Footer Styling */
 
 .footer {
