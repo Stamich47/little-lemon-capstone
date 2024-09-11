@@ -13,7 +13,6 @@
   width: 100%;
   max-width: 1440px;
   max-height: 2900px;
-  margin: 0 auto;
   padding: 0 10%;
   box-sizing: border-box;
   font-size: 1.5vw;
@@ -51,20 +50,28 @@ header img {
   color: #333333;
 }
 
-.nav a {
+.nav a,
+.footer a {
   text-decoration: none;
   color: inherit;
 }
 
+.footer li :hover,
+.nav li :hover {
+  color: #495e57;
+}
+
 /* Main Styling */
 
-.main {
+.main,
+.booking {
   grid-area: main;
   margin-top: 2vh;
   margin-bottom: 50px;
 }
 
-.main-hero {
+.main-hero,
+.booking-hero {
   display: flex;
   justify-content: space-between;
   padding: 2rem 20%;
@@ -77,11 +84,13 @@ header img {
   margin-bottom: 15%;
 }
 
-.main-hero article {
+.main-hero article,
+.booking-hero article {
   max-width: 40%;
 }
 
-.main-hero h2 {
+.main-hero h2,
+.booking-hero h2 {
   font-family: "Markazi Text", serif;
   font-weight: 700;
   font-size: 5vw;
@@ -98,7 +107,8 @@ header img {
   margin-bottom: 20px;
 }
 
-.main-hero p {
+.main-hero p,
+.booking-hero p {
   font-family: "Karla", sans-serif;
   font-weight: 400;
   font-size: 2vw;
@@ -117,7 +127,8 @@ header img {
   box-shadow: 1px 1px 4px;
 }
 
-.main-hero img {
+.main-hero img,
+.booking-hero img {
   width: 30%;
   height: 100%;
   border-radius: 16px;
@@ -281,7 +292,6 @@ h4 {
   margin-left: -20%;
   margin-right: -20%;
   position: relative;
-  margin-bottom: 15%;
   padding: 20px 0;
 }
 
@@ -330,6 +340,163 @@ h4 {
   color: #333333;
   text-align: start;
   padding: 0;
+}
+
+/* Booking Page */
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-family: "Karla", sans-serif;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.rdp-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rdp-caption_label {
+  padding: 10px;
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.rdp-month {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-bottom: 20px;
+  font-family: "Karla", sans-serif;
+}
+
+.rdp-day button {
+  font-size: 1rem;
+}
+
+.rdp-today button {
+  font-weight: 600;
+  color: #495e57;
+}
+
+.rdp-day_button:hover {
+  background-color: #495e57;
+  color: #ccc;
+  transition: 200ms;
+  font-size: 1rem;
+}
+
+.rdp-selected button {
+  background-color: #495e57;
+  color: #fff;
+  outline: none;
+  border: 2px solid white;
+  box-shadow: none;
+}
+
+.booking-form button:hover {
+  background-color: #495e57;
+  color: #fff;
+  transition: 200ms;
+}
+
+.form-input {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-input label {
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.form-input select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.form-input button {
+  background-color: #f4ce14;
+  color: #333333;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 12px;
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  font-size: 3vw;
+  cursor: pointer;
+  box-shadow: 1px 1px 4px;
+}
+
+.form-time label {
+  margin-bottom: 5px;
+}
+
+.form-guests {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.form-guests input,
+.form-time select,
+.contact-info input,
+.other-text textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.form-guests input {
+  width: 100%;
+  max-width: 100px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-info input {
+  margin-bottom: 10px;
+}
+
+.text-updates {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+}
+
+.text-updates input {
+  margin: 0;
+  height: 15px;
+  width: 15px;
+}
+
+.other-text {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 @media (min-width: 1100px) {

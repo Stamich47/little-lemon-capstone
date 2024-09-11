@@ -1,4 +1,5 @@
 import mainPhoto from "../assets/restauranfood.jpg";
+import { Link } from "react-router-dom";
 
 export default function MainHero() {
   return (
@@ -10,7 +11,9 @@ export default function MainHero() {
           We are a family-owned Mediterranean restaurant, focused on traditional
           recipes served with a modern twist.
         </p>
-        <button>Reserve a Table</button>
+        <Link to="/book">
+          <button>Reserve a Table</button>
+        </Link>
       </article>
 
       <img src={mainPhoto} alt="Restaurant Food" />

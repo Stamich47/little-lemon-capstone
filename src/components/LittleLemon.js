@@ -6,7 +6,7 @@ export default function LittleLemon() {
     <div className="about-us">
       <article>
         <h2>Little Lemon</h2>
-        <h5>Chicago</h5>
+        <h5>About Us</h5>
         <p>
           Founded by two Italian brothers, Mario and Adrian, we bring you
           traditional recipes with a modern twist. Our menu, inspired by
