@@ -409,6 +409,11 @@ h4 {
   transition: 200ms;
 }
 
+.booking-form span {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
 .form-input {
   width: 100%;
   max-width: 600px;
