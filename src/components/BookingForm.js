@@ -1,6 +1,8 @@
 import { useState, useReducer } from "react";
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/style.css";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as Yup from "yup";
 
 export default function BookingForm({
   availableTimes,
@@ -18,6 +20,21 @@ export default function BookingForm({
     phone: "",
     textUpdates: false,
     requests: "",
+  });
+
+  const validationSchema = Yup.object({
+    date: Yup.string().required("Date is required"),
+    time: Yup.string().required("Time is required"),
+    guests: Yup.number()
+      .required("Number of guests is required")
+      .min(1, "At least 1 guest is required"),
+    name: Yup.string().required("Name is required"),
+    email: Yup.string()
+      .email("Invalid email format")
+      .required("Email is required"),
+    phone: Yup.string().optional(),
+    textUpdates: Yup.boolean(),
+    requests: Yup.string().optional(),
   });
 
   const handleInputChange = (e) => {
